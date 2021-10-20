@@ -10,8 +10,11 @@ public:
 	double y;
 	double z;
 
+	//Normalizar el Vector actual
 	void Normalize();
+	//Cálculo del ángulo que hacen dos Vectores
 	double angle_between(Vector3 v_);
-
+	//Producto Escalar de dos Vectores
+	double dot_product(Vector3 v_);
 };
 

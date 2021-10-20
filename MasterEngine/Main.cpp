@@ -8,6 +8,8 @@ int main() {
 
 	printf("El angulo entre los dos vectores es de %lf grados \n", v.angle_between(v2));
 
+	printf("El producto escalar entre los dos vectores es %lf \n", v.dot_product(v2));
+
 	v.Normalize();
 
 	printf("El vector normalizado es: x %lf y %lf z %lf \n", v.x, v.y, v.z);
