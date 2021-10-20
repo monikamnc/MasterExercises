@@ -30,6 +30,11 @@ void Vector3::Normalize()
 	z = z / length;
 }
 
+double Vector3::distance_to(Vector3 v_)
+{
+	return sqrt((x - v_.x) * (x - v_.x) + (y - v_.y) * (y - v_.y) + (z - v_.z) * (z - v_.z));
+}
+
 double Vector3::angle_between(Vector3 v_)
 {
 	double lengthV1;

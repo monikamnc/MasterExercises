@@ -12,6 +12,8 @@ public:
 
 	//Normalizar el Vector actual
 	void Normalize();
+	//Cálculo de la distancia entre dos Vectores
+	double distance_to(Vector3 v_);
 	//Cálculo del ángulo que hacen dos Vectores
 	double angle_between(Vector3 v_);
 	//Producto Vectorial de dos Vectores
