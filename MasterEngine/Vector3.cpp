@@ -58,3 +58,13 @@ double Vector3::dot_product(Vector3 v_)
 
 	return  lengthV1 * lengthV2 * cos(angle * PI / 180.0);
 }
+
+Vector3 Vector3::cross_product(Vector3 v_) 
+{
+
+	double finalX = y * v_.z - z * v_.y;
+	double finalY = z * v_.x - x * v_.z;
+	double finalZ = x * v_.y - y * v_.x;
+	Vector3 result(finalX, finalY, finalZ);
+	return result;
+}
