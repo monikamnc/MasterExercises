@@ -11,6 +11,7 @@ public:
 	double z;
 
 	void Normalize();
+	double angle_between(Vector3 v_);
 
 };
 
