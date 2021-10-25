@@ -7,6 +7,10 @@ int main() {
 	printf("El primer vector es: x %.3lf y %.3lf z %.3lf \n", v.x, v.y, v.z);
 	printf("El segundo vector es: x %.3lf y %.3lf z %.3lf \n", v2.x, v2.y, v2.z);
 
+	Vector3 vT = v + v2;
+
+	printf("La suma de los vectores es: x %.3lf y %.3lf z %.3lf \n", vT.x, vT.y, vT.z);
+
 	printf("La distancia entre los dos vectores es de %.3lf \n", v.distance_to(v2));
 
 	printf("El angulo entre los dos vectores es de %.3lf grados \n", v.angle_between(v2));

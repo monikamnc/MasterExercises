@@ -10,6 +10,15 @@ public:
 	double y;
 	double z;
 
+	Vector3 operator+(Vector3& obj) 
+	{
+		Vector3 res;
+		res.x = x + obj.x;
+		res.y = y + obj.y;
+		res.z = z + obj.z;
+		return res;
+	};
+
 	//Normalizar el Vector actual
 	void Normalize();
 	//Cálculo de la distancia entre dos Vectores
