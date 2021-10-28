@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Vector3.h"
+#include "String.h"
 int main() {
 	Vector3 v(1.0, 2.0, 3.0);
 	Vector3 v2(4.0, 5.0, 6.0);
