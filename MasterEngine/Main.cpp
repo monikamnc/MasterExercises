@@ -26,4 +26,66 @@ int main() {
 	printf("El vector normalizado es: x %.3lf y %.3lf z %.3lf \n", v.x, v.y, v.z);
 
 
+
+    // Constructor with no arguments
+    String a;
+
+    // Convert string literal to
+    // char array
+    char temp[] = "Hello";
+
+    // Constructor with one argument
+    String b{ temp };
+
+    // Copy constructor
+    String c{ a };
+
+    char temp1[] = "World";
+
+    // One arg constructor called,
+    // then the move constructor
+    String d{ String{ temp } };
+
+    // Remove last character from
+    // Mystring b
+    b.pop_bk();
+
+    // Print string b
+    printf("Mystring b: %s \n", b);
+
+    // Append last character from
+    // Mystring b
+    b.push_bk('o');
+
+    // Print string b
+    printf("Mystring b: %s \n", b);
+
+    // Print length of string b
+    printf("Lenght b: %s \n", b);
+
+    char arr[80];
+
+    // Copy string b chars from
+    // length 0 to 3
+    b.cpy(arr, 3, 0);
+
+    // Print string arr
+    printf("Arr b: %s \n", b);
+
+    // Swap d and b
+    d.swp(b);
+
+    // Print d and b
+    printf("Mystring d y b: %s %s \n", d, b);
+
+    // Concatenate b and b with
+    // overloading '+' operator
+    d = b + b;
+
+    // Print string d
+    printf("Mystring d: %s \n", d);
+
+    return 0;
+
+
 }
